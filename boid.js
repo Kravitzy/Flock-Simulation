@@ -86,7 +86,7 @@ class Boid {
         }
     }
 
-    flock(boids) {
+    flock(boids, alignSlider, cohesionSlider, separationSlider) {
         let alignment = this.align(boids);
         let cohesion = this.cohesion(boids);
         let separation = this.separation(boids);
