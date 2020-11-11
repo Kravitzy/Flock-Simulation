@@ -65,7 +65,7 @@ class Boid {
     }
 
     separation(boids) {
-        let perceptionRadius = 50;
+        let perceptionRadius = 5;
         let steering = createVector();
         let total = 0;
         for (let other of boids) {
@@ -86,14 +86,10 @@ class Boid {
         }
     }
 
-    flock(boids, alignSlider, cohesionSlider, separationSlider) {
+    flock(boids) {
         let alignment = this.align(boids);
         let cohesion = this.cohesion(boids);
         let separation = this.separation(boids);
-
-        // alignment.mult(alignSlider.value());
-        // cohesion.mult(cohesionSlider.value());
-        // separation.mult(separationSlider.value());
 
         this.acceleration.add(alignment)
         this.acceleration.add(cohesion)
