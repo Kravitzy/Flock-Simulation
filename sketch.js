@@ -5,7 +5,7 @@ const flock = []
 let alignSlider, cohesionSlider, separationSlider;
 
 function setup() {
-	createCanvas(windowWidth, windowHeight*3/4);
+	createCanvas(windowWidth, windowHeight);
 	// alignSlider = createSlider(0, 100, 50);
 	// cohesionSlider = createSlider(0, 100, 50);
 	// separationSlider = createSlider(0, 100, 50);
